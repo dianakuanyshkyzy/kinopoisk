@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Kinopoisk</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Kinopoisk_colored_logo_%282021-present%29.svg/2560px-Kinopoisk_colored_logo_%282021-present%29.svg.png" alt="Kinopoisk Logo"></h1></a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="movies.html">Фильмы</a></li>
+                <li><a href="search.html">Поиск</a></li>
+                <li><a href="profile.html">Профиль</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main  class = "bodyprofile">
+    <div class = "login">
+        <form action="login.html">
+            <h1>Login</h1>
+            <div class = "input_user">
+                <input type="text" placeholder="username" required>
+                <!--<img src="https://cdn-icons-png.freepik.com/256/1077/1077114.png" alt="userlogin">-->
+            </div>
+            <div class = "input_user">
+                <input type="password" placeholder="password" required>
+                <!--<img src="https://cdn-icons-png.flaticon.com/512/2889/2889676.png" alt="userpassword">-->
+            </div>
+            <div class="add">
+                <label><input type="checkbox"> Запомнить меня</label>
+                <a href="#">Забыли пароль?</a>
+            </div>
+            <form id="fform" action="login.html">
+                <button type="submit" class="btn">Войти</button>
+              </form>
+              
+              <script>
+              document.getElementById("fform").addEventListener("submit", function(event) {
+                event.preventDefault(); 
+                window.location.href = "login.html"; 
+              });
+              </script>
+            <div class="register">
+                <p>Нет аккаунта? <a href="#">Зарегистрироваться</a></p>
+            </div>
+        </form>
+    </div>
+    </main>
+    <script src="js/app.js"></script>
+</body>
+</html>

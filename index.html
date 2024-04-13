@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kinopoisk</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <div class = "header_index">
+        <nav class = "nav_index">
+            <img class = "logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Kinopoisk_colored_logo_%282021-present%29.svg/2560px-Kinopoisk_colored_logo_%282021-present%29.svg.png" alt="logo">
+        </nav>
+    </div>
+    <div class="header-content">
+        <h1>Добро пожаловать на Кинопоиск!</h1>
+        <h3> Откройте для себя мир кино.</h3>
+        <p>Наслаждайтесь своими любимыми фильмами и сериалами.</p>
+        <form id="redirectForm" action="movies.html">
+            <button type="submit" class="gotomovies">Перейти к фильмам</button>
+          </form>
+          
+          <script>
+          document.getElementById("redirectForm").addEventListener("submit", function(event) {
+            event.preventDefault(); 
+            window.location.href = "movies.html"; 
+          });
+          </script>
+
+    </div>
+
+    <main>
+       
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

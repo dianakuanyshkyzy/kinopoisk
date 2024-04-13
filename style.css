@@ -1,0 +1,471 @@
+/* style.css */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700;800&display=swap");
+*{
+    margin: 0px;
+    padding: 0px; 
+    box-sizing: border-box;  
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: #1a191f;
+}
+header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+header img {
+    margin:10px; 
+    max-width: 15%;
+    height: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex; 
+}
+nav ul li {
+    display: inline;
+    margin-right: 40px;
+}
+
+nav ul li:last-child {
+   margin-right: 40px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.container {
+    max-width:1200px;
+    margin: 0 auto; 
+}
+h2{
+    color:white;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px;
+}
+footer{
+    background-color: #1a191f;
+}
+.header_search{
+    border: 2px solid #1a191f; 
+    border-radius:5px; 
+    padding:8px; 
+}
+main {
+    background-color: #1a191f;
+}
+.movies {
+    margin-top: 10px;
+    display:flex; 
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+.movie{
+    margin:10px;
+    margin-bottom: 10px; 
+    width:240px; 
+    position:relative;
+}
+.movie_cover1{
+    position: relative;
+    height:360px;
+}
+.movie_cover--hover{
+    background-color: black;
+    opacity: 0.1; 
+    position:absolute;
+    top:0;
+    left:0;
+    right:0; 
+    max-width: 100%;
+    height:100%; 
+    z-index: 1; 
+}
+.movie_cover--hover:hover{
+    background-color: grey;
+    cursor:pointer; 
+}
+.movie_cover{
+    max-width:100%; 
+    height:100%; 
+}
+.movie_information{
+    padding:10px 0px; 
+}
+.movie_title{
+    font-size: 18px;
+    color:white;  
+}
+.movie_genre{
+    font-size: 16px; 
+    color:darkgoldenrod;
+    
+}
+.movie_rating {
+    display:flex; 
+    justify-content: center;
+    align-items: center;
+    background-color: #1a191f;
+    color: white;
+    font-size: 14px; 
+    position:absolute; 
+    top:10px;
+    left:10px; 
+    right:0; 
+    border-radius:50%; 
+    width:36px;
+    height:36px;
+}
+.movie_year {
+    display:flex; 
+    justify-content: center;
+    align-items: center;
+    background-color: #1a191f;
+    color: white;
+    font-size: 14px; 
+    position:absolute; 
+    top:10px;
+    left:200px; 
+    right:0px; 
+    border-radius:50%; 
+    width:36px;
+    height:36px;
+}
+.movie_rating--green{
+    border: 2px solid green; 
+}
+.movie_rating--orange{
+    border: 2px solid orange; 
+}
+.movie_rating--red{
+    border: 2px solid red; 
+}
+.movie_description{
+    display:flex; 
+    justify-content: center;
+    align-items: center;
+    background-color: #1a191f;
+    color: white;
+    font-size: 14px; 
+    position:absolute; 
+    margin-bottom: 20px; 
+}
+
+.header_search{
+ margin-left: 30px;
+ margin-right: 10px;
+ margin-top: 10px;
+ margin-bottom: 10px;
+ width: 400px;
+}
+
+.header_submit{
+  width: 100px;
+  height: 32px;
+  color:black;
+  font-weight: bold;
+}
+.dropdown {
+    margin-top: 10px;
+
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+  
+.movielink {
+    position: relative;
+    z-index:2; 
+}
+  
+  .movielink ul {
+    margin-top: 10px;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: auto;
+    background: #2a2930;
+    left: 0px;
+    list-style:none;
+    border-radius: 5px;
+    opacity: 0;
+    pointer-events:none;
+    transform: translateY(-10px);
+    transition: all 0.4s ease;
+  }
+  
+  .movielink button {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .movielink button:hover {
+    background-color: rgb(109, 105, 106);
+    
+  }
+  
+  .movielink a{
+    color: black;
+    text-decoration: none;
+    color:white; 
+    margin:2px;
+    font-size: 20px;
+}
+
+.movielink .button1{
+    margin-top:20px;
+    margin-bottom:20px;
+
+    font-weight: bold;
+    font-size: 20px;
+}
+  .dropdown button {
+    background: none;
+    text-decoration: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    
+  }
+  
+  .movielink button:focus + ul, .movielink ul:hover {
+    opacity: 1;
+    pointer-events: all;
+}
+
+/* modal window*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
+    transition: opacity 0.4s, visibility 0.4s;  
+    transition: width 2s;
+}
+.modal--show{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.4s, visibility 0.4s;  
+}
+.modal_card{
+    transition: transform 0.4s ease;
+    transform: translateY(-50%) scale(0.5);
+    background-color: #fefefe;
+    width: 640px;
+    max-height: 150%;
+    padding: 16px;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.8);
+    background-color: #1a191f;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.modal--show .modal_card {
+    transform: translateY(0) scale(1); 
+    transition: opacity 0.4s, visibility 0.4s;  
+}
+.modal_image{
+    width: 300px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.modal_info{
+    margin-left: 20px;
+}
+.modal_button_close{
+    padding: 5px;
+    margin:10px;
+    align-self: center;
+    color:white;
+    border-radius: 5px;
+    font-weight: 300;
+    width:200px; 
+    height:30px; 
+    background-color: rgba(42, 38, 38, 0.8);
+}
+.modal ul{
+    list-style:none;
+}
+.modal ul li {
+    padding: 5px;
+}
+
+.stop_scrolling{
+    height:100%; 
+    overflow:hidden; 
+}
+
+.header_index{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("https://photobooth.cdn.sports.ru/preset/post/3/e9/b9eeee74b45ca9849936291822c4b.jpeg");
+    /*background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("https://lindeal.com/ld/images/2023/12/26/luchshie-onlajn-kinoteatry-dlya-prosmotra-filmov-i-serialov-kinopoisk-hd-v-top-20-onlajn-kinoteatrov-v-2024-godu.png");*/
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    position: relative;
+}
+
+.nav_index{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.logo {
+    width: 250px;
+    cursor: pointer;
+    margin-left: 40%;
+    margin-top: 20px;
+}
+
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    margin-top: 100px;
+    color:white; 
+}
+
+.header-content h1 {
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: bold;
+    max-width: 650px;
+    color:white; 
+}
+
+.header-content h3 {
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color:white; 
+}
+
+.header-content p {
+    font-weight: 200;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color:white; 
+}
+.gotomovies{
+    background-color: rgb(255, 255, 255);
+    color:rgb(246, 139, 16); 
+    font-weight: bold;
+    width:300px; 
+    height:40px;
+    font-size: 15px;
+    margin-top:10px;
+    border-radius:20px;
+}
+.input_user img{
+max-width: auto;
+height: auto;
+margin-left: 10px;
+}
+.input_user{
+    display: flex;
+}
+.login{
+    width:420px;
+    margin-top: 150px;
+    background: rgb(255, 155, 40);
+    border-radius:20px;
+}
+.bodyprofile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login h1{
+    font-size:36px;
+    text-align: center;
+}
+.login .input_user{
+    width:100%;
+    height:50px; 
+    margin:30px 0; 
+}
+.input_user input{
+    width:100%; 
+    height:100%;
+    background: transparent;
+    border:none; 
+    outline:none;
+    border:2px solid rgba(255,255,255,0.2);
+    border-radius: 40px;
+    padding: 20px 45px 20px 20px; 
+}
+
+.input_user input::placeholder{
+    color:rgb(148, 144, 144);
+}
+
+.add a{
+    margin-left: 140px;
+    color:black;
+    text-decoration: none;
+}
+.add label{
+    margin-left: 10px;
+}
+.register a{
+    color:black; 
+    text-decoration: none;
+}
+.login .btn{
+    background-color: white;
+    margin-left:2.5%;
+    width:95%;
+    height:45px;
+    outline: none; 
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    border-radius: 40px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor:pointer;
+    color:#333;
+}
+.register{
+    margin-left: 85px;
+    font-size: 15px;
+}
+.loginback img{
+    height:100%;
+    width:100%; 
+}

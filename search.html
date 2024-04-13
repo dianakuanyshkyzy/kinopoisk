@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search - Kinopoisk</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html"><h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Kinopoisk_colored_logo_%282021-present%29.svg/2560px-Kinopoisk_colored_logo_%282021-present%29.svg.png" alt="Kinopoisk Logo"></h1></a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="movies.html">Фильмы</a></li>
+                <li><a href="search.html">Поиск</a></li>
+                <li><a href="profile.html">Профиль</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <!-- Основной контент -->
+        <section id="content">
+            <h2>Поиск фильмов</h2>
+            <form>
+                <input type="text" class="header_search" placeholder="Введите название фильма...">
+                <button type="submit" class="header_submit">Искать</button>
+            </form>
+            <div class="movies"></div>
+            <div class = "modal"></div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Нижняя часть страницы -->
+        <p>&copy; 2024 Kinopoisk Inc.</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

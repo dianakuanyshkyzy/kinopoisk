@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html"><h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Kinopoisk_colored_logo_%282021-present%29.svg/2560px-Kinopoisk_colored_logo_%282021-present%29.svg.png" alt="Kinopoisk Logo"></h1></a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="movies.html">Фильмы</a></li>
+                <li><a href="search.html">Поиск</a></li>
+                <li><a href="profile.html">Профиль</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        
+        <section id = "content"> <nav>
+            <div class="dropdown">
+                <div class="movielink">
+                <button class="button1">Выберите категорию</button>
+                <ul>
+                    <button id="topMoviesBtn"><a href="#">Лучшие фильмы</a></button>
+                    <button id="newMoviesBtn"><a href="#">Новинки</a></button>
+                    <button id="dramaMoviesBtn"><a href="#">Драма</a></button>
+                    <button id="thrillerMoviesBtn"><a href="#">Триллер</a></button>
+                    <button id="fantasyMoviesBtn"><a href="#">Фантастика</a></button>
+                    <button id="criminalMoviesBtn"><a href="#">Криминал</a></button>
+                    <button id="melodramaMoviesBtn"><a href="#">Мелодрама</a></button>
+                    <button id="detectiveMoviesBtn"><a href="#">Детектив</a></button>
+                    <button id="childMoviesBtn"><a href="#">Детский</a></button>
+                    <button id="biographyMoviesBtn"><a href="#">Биография</a></button>
+
+                </ul>
+              </div>
+              
+            </div>
+        </nav>
+        </section> 
+        <div class = "movies"></div>
+        <div class = "modal">
+            
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Kinopoisk Inc.</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
